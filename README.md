@@ -6,9 +6,9 @@ This organization contains an initial set of tools to curate special collections
 
 There are several key components to GDSC:
 1. metadata repository: currently an [excel file](https://miami.box.com/s/cpe136whxprafac9ssvkig74ju4o2x7m) stored on Box
-2. kubernetes cluster with rook-ceph storage and a clone of the [https://github.com/Geospatial-Digital-Special-Collections/kubernetes](kubernetes) repository (current control plane at kmaster.idsc.miami.edu)
-3. administrative machine with a clone of the [https://github.com/Geospatial-Digital-Special-Collections/tools](tools) repository (your data management and curation machine)
-4. a set of custom container images in the [https://github.com/Geospatial-Digital-Special-Collections/docker](docker) repository used by the kubernetes implementation
+2. kubernetes cluster with rook-ceph storage and a clone of the [kubernetes](https://github.com/Geospatial-Digital-Special-Collections/kubernetes) repository (current control plane at kmaster.idsc.miami.edu)
+3. administrative machine with a clone of the [tools](https://github.com/Geospatial-Digital-Special-Collections/tools) repository (your data management and curation machine)
+4. a set of custom container images in the [docker](https://github.com/Geospatial-Digital-Special-Collections/docker) repository used by the kubernetes implementation
 
 Note: the kubernetes repository can also be run on localhost as a development machine and managed by the tools repository on the same development machine.  
 
@@ -29,4 +29,4 @@ For most documentation see the README files in respective directories of each re
 
 ### Questions
 
-Please direct all questions to [mailto:tnorris@miami.edu](tnorris@miami.edu)
+Please direct all questions to [tnorris@miami.edu](mailto:tnorris@miami.edu)

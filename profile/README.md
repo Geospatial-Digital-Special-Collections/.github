@@ -24,9 +24,9 @@ The GDSC data store is also linked to an ArcGIS Portal server at https://portal.
 
 For most documentation see the README files in respective directories of each repository in this organization. A few general notes are in the [docs](https://github.com/Geospatial-Digital-Special-Collections/docs) repository for:
 
--   [general architecture](https://github.com/Geospatial-Digital-Special-Collections/docs/gdsc_implementation.svg)
--   [one page summary description](https://github.com/Geospatial-Digital-Special-Collections/md/gdsc_summary.md)
--   [installation notes](https://github.com/Geospatial-Digital-Special-Collections/md/gdsc_install.md)
+-   [general architecture](https://github.com/Geospatial-Digital-Special-Collections/docs/figures/gdsc_implementation.svg)
+-   [one page summary description](https://github.com/Geospatial-Digital-Special-Collections/docs/md/gdsc_summary.md)
+-   [installation notes](https://github.com/Geospatial-Digital-Special-Collections/docs/md/gdsc_install.md)
 
 ### Questions
 

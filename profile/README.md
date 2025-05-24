@@ -2,21 +2,33 @@
 
 # GDSC - Geospatial Data Special Collections
 
-This organization contains an initial set of tools to curate special collections of GIS data as services through standard open and selected proprietary protocols. Currently it includes a back end data store in a containerized kubernetes environment, a set of tools for data management and curation, and a front end search engine to browse the data catalog.
+GDSC is a set of configurations and tools to curate special collections of GIS data.  
 
-There are several key components to GDSC:
-1. metadata repository: currently an [excel file](https://miami.box.com/s/cpe136whxprafac9ssvkig74ju4o2x7m) stored on Box
-2. kubernetes cluster with rook-ceph storage and a clone of the [kubernetes](https://github.com/Geospatial-Digital-Special-Collections/kubernetes) repository (current control plane at kmaster.idsc.miami.edu)
-3. administrative machine with a clone of the [tools](https://github.com/Geospatial-Digital-Special-Collections/tools) repository (your data management and curation machine)
-4. a set of custom container images in the [docker](https://github.com/Geospatial-Digital-Special-Collections/docker) repository used by the kubernetes implementation
+Currently it includes a back end data store in a containerized kubernetes environment, a set of tools for data management and curation, and a front end search engine to browse the data catalog.
+
+### Installation
+
+Please see the [installation notes](https://github.com/Geospatial-Digital-Special-Collections/docs/blob/main/md/gdsc_install.md) in the [docs](https://github.com/Geospatial-Digital-Special-Collections/docs) repository.
+
+### Components
+
+There main repositories for GDSC are:  
+1. [kubernetes](https://github.com/Geospatial-Digital-Special-Collections/kubernetes)  - tools for managing the k8s cluster  
+2. [tools](https://github.com/Geospatial-Digital-Special-Collections/tools) - to manage data curation and ingest  
+
+There are several other key components to GDSC:
+1. [metadata repository](https://miami.box.com/s/cpe136whxprafac9ssvkig74ju4o2x7m) - currently an excel file stored on Box
+2. [docker](https://github.com/Geospatial-Digital-Special-Collections/docker) repository used to build containers used by GDSC
 
 Note: the kubernetes repository can also be run on localhost as a development machine and managed by the tools repository on the same development machine.  
 
-These components provide several internet services (development machine):
+### Services and Endpoints
+
+The above components provide several internet services (development machine):
 1. A simple search interface at https://gdsc.idsc.miami.edu (http://localhost:5000)
 2. A vector tile server at https://gdsc.idsc.miami.edu/vector/ (http://localhost:7800)
-3. A SOLR index of the metadata repository at http://10.141.251.20:8983 (http://localhost:8983)
-4. A PostgREST endpoint for database queries at http://10.141.251.21:3000 (http://localhost:3000)
+3. A SOLR index of the metadata repository at https://gdsc.idsc.miami.edu/solr/solr/ (http://localhost:8983)
+4. A PostgREST endpoint for database queries at https://gdsc.idsc.miami.edu/functions/ (http://localhost:3000)
 
 The GDSC data store is also linked to an ArcGIS Portal server at https://portal.gdsc.miami.edu (not part of the Kubernetes implementation).
 

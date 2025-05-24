@@ -4,7 +4,7 @@
 
 GDSC is a set of configurations and tools to curate special collections of GIS data.  
 
-Currently it includes a back end data store in a containerized kubernetes environment, a set of tools for data management and curation, and a front end search engine to browse the data catalog.
+Currently it includes a back end data store in a containerized k8s environment, a set of tools for data management and curation, and a front end search engine to browse the data catalog.
 
 ### Installation
 
